@@ -14,22 +14,30 @@
         <input type="password" name="password" placeholder="Enter Password" />
 
         <input type="submit" value="Login" />
+<<<<<<< HEAD
     </form>
 
     <p>Haven't signed up yet?</p>
-    <a href="{% url 'register' %}">Sign up</a>
-</div>
+  
+    </form>
 
-{% else %}
 
 <div>
+<<<<<<< HEAD
     <form method="post" action="">
+=======
+    <form method="POST" action="">
+>>>>>>> 1b256d0777364ef37a9ec977e90164f1d87cde8a
         {% csrf_token %}
         {{form.as_p}}
         <input type="submit" value="Register" />
     </form>
 
+<<<<<<< HEAD
     <p>Already signed up?</p>
+=======
+    <p>Already sign up yet?</p>
+>>>>>>> 1b256d0777364ef37a9ec977e90164f1d87cde8a
     <a href="{% url 'login' %}">Login</a>
 </div>
 {% endif %}
